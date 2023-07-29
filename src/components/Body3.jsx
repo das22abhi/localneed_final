@@ -22,9 +22,9 @@ function Body3() {
                         </Phoneview>
                     </div>
                     <div className='sub-parent-container-2 w-[40%] min-w-[400px] flex flex-col md:items-start md:text-left text-center items-center py-[10%]'>
-                        <p className='text-[15px] font-bold text-indigo-700 mb-4'>Original platform</p>
+                        {/* <p className='text-[15px] font-bold text-indigo-700 mb-4'>Original platform</p> */}
                         <p className='text-[45px] font-extrabold mb-4 leading-[50px]'>Hottest deals around the web</p>
-                        <p className='text-[15px] text-slate-500 w-[60%] font-medium leading-7'>Find the perfect gift or everyday goods right at your fingertips</p>
+                        {/* <p className='text-[15px] text-slate-500 w-[60%] font-medium leading-7'>Find the perfect gift or everyday goods right at your fingertips</p> */}
                     </div>
                 </div>
             </div>

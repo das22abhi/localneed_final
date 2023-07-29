@@ -10,8 +10,8 @@ function Body2() {
             <div className='w-[90%] md:min-w-[750px]'>
                 <div className='parent-container bg-gradient-to-tr from-slate-200 to-slate-50 rounded-[30px] p-10 flex justify-around flex-col-reverse items-center md:flex-row relative'>
                     <div className='sub-parent-container-1 flex flex-col md:justify-center w-[50%] min-w-[400px] py-[10%] items-center text-center'>
-                        <p className='text-[45px] font-extrabold w-[80%] mb-4 leading-[50px]'>Experience products in AR</p>
-                        <p className='text-[15px] text-slate-500 w-[60%] font-medium leading-8'>Have you tried Augmented Reality? Stop looking at boring gallaries and start experiencing them.</p>
+                        <p className='text-[45px] font-extrabold w-[80%] mb-4 leading-[50px]'>Localneed.in</p>
+                        <p className='text-[15px] text-slate-500 w-[60%] font-medium leading-8'>"Shop Smart, Live Better! Your Trusted Online Shop for Everything You Need..</p>
                     </div>
                     <div className='sub-parent-container-2 w-[30%] min-w-[250px] flex justify-center relative'>
                         <div className='z-[2]'>
