@@ -4,23 +4,45 @@ import indexes from '../constants/indexes'
 import handleClick from '../functions/handleclick'
 import localneed_logo from '../assets/Logo_LN-removebg-preview.png'
 
-function Navbar() {
-  const [open,setOpen] = useState(false)
+function Navbar () {
+  const [open, setOpen] = useState(false)
   return (
     <div className='w-full h-[12%] flex justify-center items-center'>
       <div className='h-full w-[90%] flex justify-between items-center mt-3'>
         <div className='text-[20px] font-bold sm:text-slate-700 text-white'>
-          <img src={localneed_logo} className='h-14 bg-white' alt="" />
+          <img src={localneed_logo} className='h-14' alt='' />
         </div>
         <div className='w-[25%] flex justify-end md:justify-around items-center min-w-[200px] h-full text-sm font-semibold text-white'>
-          {indexes.map((item,index)=>(
-            <a href={item.link} className='hidden md:inline-block cursor-pointer' onClick={(e)=>handleClick(e,item.link)} key={index} >{item.name}</a>
+          {indexes.map((item, index) => (
+            <a
+              href={item.link}
+              className='hidden md:inline-block cursor-pointer'
+              onClick={e => handleClick(e, item.link)}
+              key={index}
+            >
+              {item.name}
+            </a>
           ))}
           <div className='relative'>
-            <img src={justification} alt="" className='inline-block md:hidden' onClick={()=>setOpen(!open)} />
-            <div className={`absolute top-14 left-0 overflow-hidden ${open ? 'h-[110px] flex flex-col justify-between' : 'h-0'} md:hidden z-10`}>
-              {indexes.map((item,index)=>(
-                <a href={item.link} onClick={(e)=>handleClick(e,item.link)} key={index} >{item.name}</a>
+            <img
+              src={justification}
+              alt=''
+              className='inline-block md:hidden'
+              onClick={() => setOpen(!open)}
+            />
+            <div
+              className={`absolute top-14 left-0 overflow-hidden ${
+                open ? 'h-[110px] flex flex-col justify-between' : 'h-0'
+              } md:hidden z-10`}
+            >
+              {indexes.map((item, index) => (
+                <a
+                  href={item.link}
+                  onClick={e => handleClick(e, item.link)}
+                  key={index}
+                >
+                  {item.name}
+                </a>
               ))}
             </div>
           </div>
@@ -32,4 +54,4 @@ function Navbar() {
   )
 }
 
-export default Navbar;
+export default Navbar
