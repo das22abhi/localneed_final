@@ -10,7 +10,11 @@ function Navbar () {
     <div className='w-full h-[12%] flex justify-center items-center'>
       <div className='h-full w-[90%] flex justify-between items-center mt-3'>
         <div className='text-[20px] font-bold sm:text-slate-700 text-white'>
-          <img src={localneed_logo} className='h-14 bg-white' alt='' />
+          <img
+            src={localneed_logo}
+            className='h-14 bg-white object-contain'
+            alt=''
+          />
         </div>
         <div className='w-[25%] flex justify-end md:justify-around items-center min-w-[200px] h-full text-sm font-semibold text-white'>
           {indexes.map((item, index) => (
